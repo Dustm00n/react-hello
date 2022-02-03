@@ -1,7 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import image from "../../img/rigo-baby.jpg";
+import Card from "./Card.jsx";
+import JumboTron from "./jumbotron.jsx";
 import NavBar from "./navbar.jsx";
 
 //create your first component
@@ -9,6 +12,43 @@ const Home = () => {
 	return (
 		<>
 			<NavBar />
+			<JumboTron />
+			<div className="container-fluid mt-5">
+				<div className="row">
+					<div className="col">
+						<Card
+							Tittle="Hola"
+							Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor enim. Suspendisse in rhoncus elit. Ut quam sapien, vestibulum ut ornare sed, congue ut risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vehicula vitae tortor et condimentum. Phasellus feugiat ligula ut ligula imperdiet, sit amet vestibulum augue semper. Vivamus orci sapien, mattis sit amet mollis in, faucibus posuere eros. Integer eu convallis tortor. Maecenas dignissim tellus erat, vel rhoncus orci lacinia iaculis."
+							Button="PINCHA!"
+							Image={image}
+						/>
+					</div>
+					<div className="col">
+						<Card
+							Tittle="Hola"
+							Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor enim. Suspendisse in rhoncus elit. Ut quam sapien, vestibulum ut ornare sed, congue ut risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vehicula vitae tortor et condimentum. Phasellus feugiat ligula ut ligula imperdiet, sit amet vestibulum augue semper. Vivamus orci sapien, mattis sit amet mollis in, faucibus posuere eros. Integer eu convallis tortor. Maecenas dignissim tellus erat, vel rhoncus orci lacinia iaculis."
+							Button="PINCHA!"
+							Image={image}
+						/>
+					</div>
+					<div className="col">
+						<Card
+							Tittle="Hola"
+							Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor enim. Suspendisse in rhoncus elit. Ut quam sapien, vestibulum ut ornare sed, congue ut risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vehicula vitae tortor et condimentum. Phasellus feugiat ligula ut ligula imperdiet, sit amet vestibulum augue semper. Vivamus orci sapien, mattis sit amet mollis in, faucibus posuere eros. Integer eu convallis tortor. Maecenas dignissim tellus erat, vel rhoncus orci lacinia iaculis."
+							Button="PINCHA!"
+							Image={image}
+						/>
+					</div>
+					<div className="col">
+						<Card
+							Tittle="Hola"
+							Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tortor enim. Suspendisse in rhoncus elit. Ut quam sapien, vestibulum ut ornare sed, congue ut risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vehicula vitae tortor et condimentum. Phasellus feugiat ligula ut ligula imperdiet, sit amet vestibulum augue semper. Vivamus orci sapien, mattis sit amet mollis in, faucibus posuere eros. Integer eu convallis tortor. Maecenas dignissim tellus erat, vel rhoncus orci lacinia iaculis."
+							Button="PINCHA!"
+							Image={image}
+						/>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 };
